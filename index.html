@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools Website</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Tool Grid Layout */
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        /* Tool Card Design */
+        .tool-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .tool-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .tool-card p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Colors for Tool Cards */
+        .tool-card:nth-child(1) { background-color: #ffebee; }
+        .tool-card:nth-child(2) { background-color: #f3e5f5; }
+        .tool-card:nth-child(3) { background-color: #e8eaf6; }
+        .tool-card:nth-child(4) { background-color: #e3f2fd; }
+        .tool-card:nth-child(5) { background-color: #e0f7fa; }
+        .tool-card:nth-child(6) { background-color: #e8f5e9; }
+        .tool-card:nth-child(7) { background-color: #fff3e0; }
+        .tool-card:nth-child(8) { background-color: #fbe9e7; }
+        .tool-card:nth-child(9) { background-color: #efebe9; }
+        .tool-card:nth-child(10) { background-color: #eceff1; }
+        .tool-card:nth-child(11) { background-color: #fff8e1; }
+        .tool-card:nth-child(12) { background-color: #f1f8e9; }
+        .tool-card:nth-child(13) { background-color: #e0f2f1; }
+        .tool-card:nth-child(14) { background-color: #ede7f6; }
+        .tool-card:nth-child(15) { background-color: #e8f5e9; }
+        .tool-card:nth-child(16) { background-color: #fff3e0; }
+        .tool-card:nth-child(17) { background-color: #fbe9e7; }
+        .tool-card:nth-child(18) { background-color: #efebe9; }
+        .tool-card:nth-child(19) { background-color: #eceff1; }
+        .tool-card:nth-child(20) { background-color: #fff8e1; }
+        .tool-card:nth-child(21) { background-color: #f1f8e9; }
+        .tool-card:nth-child(22) { background-color: #e0f2f1; }
+        .tool-card:nth-child(23) { background-color: #ede7f6; }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tool-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tool-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Every tool you need to work with PDFs in one place</h1>
+        <p>All are 100% FREE and easy to use! Merge, split, compress, convert, rotate, unlock and watermark PDFs with just a few clicks.</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Tool Grid -->
+        <div class="tool-grid">
+            <!-- Merge PDF -->
+            <div class="tool-card">
+                <h3>Merge PDF</h3>
+                <p>Combine PDFs in the order you want with the content PDF on page available.</p>
+            </div>
+
+            <!-- Split PDF -->
+            <div class="tool-card">
+                <h3>Split PDF</h3>
+                <p>Select the new PDF or which can be any conversion into independent PDF files.</p>
+            </div>
+
+            <!-- Compress PDF -->
+            <div class="tool-card">
+                <h3>Compress PDF</h3>
+                <p>Pull out file into which containing for material PDF quality.</p>
+            </div>
+
+            <!-- PDF to Word -->
+            <div class="tool-card">
+                <h3>PDF to Word</h3>
+                <p>Listed versions of your PDF files that may be sold from your PDF files into easy to edit PDF and PDFs allocations.</p>
+            </div>
+
+            <!-- PDF to PowerPoint -->
+            <div class="tool-card">
+                <h3>PDF to PowerPoint</h3>
+                <p>Turn your PDF files into easy to edit PDF and PDFs allocations.</p>
+            </div>
+
+            <!-- PDF to Excel -->
+            <div class="tool-card">
+                <h3>PDF to Excel</h3>
+                <p>Put data samples from PDFs into Excel identifications in line check records.</p>
+            </div>
+
+            <!-- Word to PDF -->
+            <div class="tool-card">
+                <h3>Word to PDF</h3>
+                <p>Make DOC and DOC's files easy to modify or generating them to PDF.</p>
+            </div>
+
+            <!-- PowerPoint to PDF -->
+            <div class="tool-card">
+                <h3>PowerPoint to PDF</h3>
+                <p>Make PDFs and PDFs allocations easy to share by converting them to PDF.</p>
+            </div>
+
+            <!-- Excel to PDF -->
+            <div class="tool-card">
+                <h3>Excel to PDF</h3>
+                <p>Make LCCL, translationer, user browsing, streaming them to PDF.</p>
+            </div>
+
+            <!-- Edit PDF -->
+            <div class="tool-card">
+                <h3>Edit PDF</h3>
+                <p>Add less, bringing all those or feedback information to PDF documents. Edit the size, font, and color of this added content.</p>
+            </div>
+
+            <!-- PDF to JPG -->
+            <div class="tool-card">
+                <h3>PDF to JPG</h3>
+                <p>Convert each PDF page into a JPG or extract all images contained in a PDF.</p>
+            </div>
+
+            <!-- JPG to PDF -->
+            <div class="tool-card">
+                <h3>JPG to PDF</h3>
+                <p>Convert JPG images to PDF in seconds. Early will not contain so as to apply.</p>
+            </div>
+
+            <!-- Sign PDF -->
+            <div class="tool-card">
+                <h3>Sign PDF</h3>
+                <p>Any 'words' or 'request' electronic signatures have either...</p>
+            </div>
+
+            <!-- Watermark -->
+            <div class="tool-card">
+                <h3>Watermark</h3>
+                <p>Keep us image that over your PDF in seconds. Create the fingerprint, translucency or jpg tables.</p>
+            </div>
+
+            <!-- Rotate PDF -->
+            <div class="tool-card">
+                <h3>Rotate PDF</h3>
+                <p>Please your PDFs live our generated items. You can send notes installed PDFs at once!</p>
+            </div>
+
+            <!-- HTML to PDF -->
+            <div class="tool-card">
+                <h3>HTML to PDF</h3>
+                <p>Convert features on HTML to PDF. Copy and paste the tags of the pages you want and connect to an app with a click.</p>
+            </div>
+
+            <!-- Unlock PDF -->
+            <div class="tool-card">
+                <h3>Unlock PDF</h3>
+                <p>Remove PDF password records, giving you the headers to see your PDFs at me work.</p>
+            </div>
+
+            <!-- Protect PDF -->
+            <div class="tool-card">
+                <h3>Protect PDF</h3>
+                <p>Create PDF files easily accessed. Envoye PDF documents for project touchboard access.</p>
+            </div>
+
+            <!-- Organize PDF -->
+            <div class="tool-card">
+                <h3>Organize PDF</h3>
+                <p>Send pages of your PDF files because you like something it doesn't add for pages for your document in your connection.</p>
+            </div>
+
+            <!-- PDF to PDF/A -->
+            <div class="tool-card">
+                <h3>PDF to PDF/A</h3>
+                <p>Transform your PDF A to PDFA, the IDO database, and the PDF information. Add more information about PDF files than do you need to download.</p>
+            </div>
+
+            <!-- Repair PDF -->
+            <div class="tool-card">
+                <h3>Repair PDF</h3>
+                <p>Repair a damaged PDF and recover data from correct PDFs. Fix PDF files with our Repair tool.</p>
+            </div>
+
+            <!-- Page numbers -->
+            <div class="tool-card">
+                <h3>Page numbers</h3>
+                <p>Add page numbers into PDFs into case. Compare PDF positions, dimensions, range.gray.</p>
+            </div>
+
+            <!-- Scan to PDF -->
+            <div class="tool-card">
+                <h3>Scan to PDF</h3>
+                <p>Capture documents count from your mobile browser and send them instantly for your browser.</p>
+            </div>
+
+            <!-- OCR PDF -->
+            <div class="tool-card">
+                <h3>OCR PDF</h3>
+                <p>Exact answers scanned PDF into searchable and selectable documents.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 PDF Tools Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
