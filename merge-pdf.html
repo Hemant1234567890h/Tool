@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge PDF</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* File Upload Section */
+        .file-upload {
+            background: white;
+            border: 2px dashed #4CAF50;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .file-upload:hover {
+            background-color: #f0f0f0;
+        }
+
+        .file-upload label {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .file-upload label:hover {
+            background-color: #45a049;
+        }
+
+        .file-upload p {
+            margin: 20px 0;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .file-upload input[type="file"] {
+            display: none;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Merge PDF Files</h1>
+        <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- File Upload Section -->
+        <div class="file-upload">
+            <label for="pdfFiles">Select PDF Files</label>
+            <input type="file" id="pdfFiles" name="pdfFiles" multiple accept="application/pdf">
+            <p>or drop PDFs here</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 PDF Tools Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Drag-and-Drop Functionality
+        const fileUpload = document.querySelector('.file-upload');
+        const fileInput = document.getElementById('pdfFiles');
+
+        // Handle Drag-and-Drop
+        fileUpload.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            fileUpload.style.backgroundColor = '#e0f7fa';
+        });
+
+        fileUpload.addEventListener('dragleave', () => {
+            fileUpload.style.backgroundColor = 'white';
+        });
+
+        fileUpload.addEventListener('drop', (e) => {
+            e.preventDefault();
+            fileUpload.style.backgroundColor = 'white';
+            fileInput.files = e.dataTransfer.files;
+            alert(`${e.dataTransfer.files.length} file(s) selected!`);
+        });
+    </script>
+
+</body>
+</html>
